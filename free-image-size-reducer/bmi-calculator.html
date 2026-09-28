@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMI Calculator: Metric &amp; Imperial | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description" content="Estimate body mass index using metric or imperial height and weight measurements.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/bmi-calculator.html">
+  <meta name="theme-color" content="#09090c">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BMI Calculator — ToolCentral">
+  <meta property="og:description" content="Calculate an approximate BMI from your height and weight with metric or imperial units.">
+  <meta property="og:url" content="https://www.freeimagesizereducer.com/bmi-calculator.html">
+  <meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BMI Calculator — ToolCentral">
+  <meta name="twitter:description" content="Estimate BMI using metric or imperial units in your browser.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"BMI Calculator","url":"https://www.freeimagesizereducer.com/bmi-calculator.html","description":"Estimate body mass index from metric or imperial height and weight.","applicationCategory":"HealthApplication","operatingSystem":"Any","isAccessibleForFree":true}</script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">TC</span>ToolCentral</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul>
+  </div></header>
+  <main id="main">
+    <div class="page-header container"><h1>BMI calculator</h1><p class="lede">Estimate body mass index from your height and weight. Choose metric or imperial measurements.</p></div>
+    <section class="container calculator-panel" aria-labelledby="bmi-heading">
+      <h2 id="bmi-heading">Enter your measurements</h2>
+      <div class="field"><label for="bmi-units">Units</label><select id="bmi-units"><option value="metric">Metric (kg, cm)</option><option value="imperial">Imperial (lb, ft/in)</option></select></div>
+      <div class="calculator-fields">
+        <div class="field"><label for="bmi-weight">Weight (kg)</label><input id="bmi-weight" type="number" min="0.1" step="any" inputmode="decimal" placeholder="e.g. 70"></div>
+        <div class="field" id="height-cm-wrap"><label for="bmi-height-cm">Height (cm)</label><input id="bmi-height-cm" type="number" min="1" step="any" inputmode="decimal" placeholder="e.g. 175"></div>
+        <div class="field" id="height-ft-wrap" hidden><label for="bmi-height-ft">Height (feet)</label><input id="bmi-height-ft" type="number" min="0" step="1" inputmode="numeric" placeholder="e.g. 5"></div>
+        <div class="field" id="height-in-wrap" hidden><label for="bmi-height-in">Height (inches)</label><input id="bmi-height-in" type="number" min="0" max="11.99" step="any" inputmode="decimal" placeholder="e.g. 9"></div>
+      </div>
+      <button class="btn btn-primary" id="calculate-bmi" type="button">Calculate BMI</button>
+      <p class="calculator-error" id="bmi-error" role="status" aria-live="polite"></p>
+      <div class="calculator-result" aria-live="polite"><output id="bmi-result">Enter your measurements to see an estimate.</output><p id="bmi-category"></p></div>
+    </section>
+    <section class="container prose"><div class="related-links"><a href="./calculator-tools.html">All calculators</a><a href="./percentage-calculator.html">Percentage calculator</a></div><p>BMI is a rough screening measure for adults, not a diagnosis. It does not account for factors such as age, body composition, or pregnancy. Consult a qualified health professional for personal medical advice.</p></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>ToolCentral</strong><p class="footer-note">Free, useful browser tools for everyday tasks.</p><p class="footer-credit">Developed by <span>Kashan Ali</span></p></div><ul class="footer-links"><li><a href="./calculator-tools.html">Calculators</a></li><li><a href="./document-tools.html">Document tools</a></li><li><a href="./terms.html">Terms</a></li></ul></div></footer>
+  <script src="./assets/js/bmi-calculator.js" defer></script><script src="./assets/js/nav.js" defer></script>
+</body>
+</html>

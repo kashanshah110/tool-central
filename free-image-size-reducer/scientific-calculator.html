@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scientific Calculator: Functions &amp; Expressions | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description" content="Evaluate arithmetic and scientific expressions with trigonometry, logarithms, powers, roots, and constants in your browser.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/scientific-calculator.html">
+  <meta name="theme-color" content="#09090c">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scientific Calculator — ToolCentral">
+  <meta property="og:description" content="Use a browser-based scientific calculator for arithmetic, trigonometry, logarithms, powers, and roots.">
+  <meta property="og:url" content="https://www.freeimagesizereducer.com/scientific-calculator.html">
+  <meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Scientific Calculator — ToolCentral">
+  <meta name="twitter:description" content="Calculate expressions with scientific functions and constants.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Scientific Calculator","url":"https://www.freeimagesizereducer.com/scientific-calculator.html","description":"Evaluate arithmetic expressions with trigonometry, logarithms, powers, roots, and constants.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true}</script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-row">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">TC</span>ToolCentral</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul>
+  </div></header>
+  <main id="main">
+    <div class="page-header container"><h1>Scientific calculator</h1><p class="lede">Evaluate expressions with familiar scientific functions. Use <code>sin(30)</code>, <code>sqrt(9)</code>, <code>2^3</code>, or parentheses.</p></div>
+    <section class="container calculator-panel scientific-calculator" aria-label="Scientific calculator">
+      <label class="field" for="scientific-expression">Expression</label>
+      <input class="calculator-display" id="scientific-expression" type="text" inputmode="decimal" autocomplete="off" aria-describedby="scientific-help" placeholder="0">
+      <p id="scientific-help" class="field-help">Functions: sin, cos, tan, asin, acos, atan, sqrt, log, ln, abs, factorial (!). Use * for multiplication. Trigonometry uses degrees by default.</p>
+      <div class="field"><label for="angle-mode">Angle unit</label><select id="angle-mode"><option value="deg">Degrees</option><option value="rad">Radians</option></select></div>
+      <div class="calculator-keys" aria-label="Calculator keys">
+        <button type="button" data-insert="sin(">sin</button><button type="button" data-insert="cos(">cos</button><button type="button" data-insert="tan(">tan</button><button type="button" data-insert="sqrt(">√</button><button type="button" data-action="clear">AC</button>
+        <button type="button" data-insert="asin(">asin</button><button type="button" data-insert="acos(">acos</button><button type="button" data-insert="atan(">atan</button><button type="button" data-insert="^">xʸ</button><button type="button" data-action="backspace">⌫</button>
+        <button type="button" data-insert="log(">log</button><button type="button" data-insert="ln(">ln</button><button type="button" data-insert="(">(</button><button type="button" data-insert=")">)</button><button type="button" data-insert="/">÷</button>
+        <button type="button" data-insert="7">7</button><button type="button" data-insert="8">8</button><button type="button" data-insert="9">9</button><button type="button" data-insert="!">x!</button><button type="button" data-insert="*">×</button>
+        <button type="button" data-insert="4">4</button><button type="button" data-insert="5">5</button><button type="button" data-insert="6">6</button><button type="button" data-insert="pi">π</button><button type="button" data-insert="-">−</button>
+        <button type="button" data-insert="1">1</button><button type="button" data-insert="2">2</button><button type="button" data-insert="3">3</button><button type="button" data-insert="e">e</button><button type="button" data-insert="+">+</button>
+        <button type="button" data-insert="0">0</button><button type="button" data-insert=".">.</button><button type="button" data-action="sign">±</button><button class="key-equals" type="button" data-action="equals" style="grid-column: span 2">=</button>
+      </div>
+      <p class="calculator-error" id="calculator-error" role="status" aria-live="polite"></p>
+      <div class="calculator-result"><output id="scientific-result">Your result will appear here.</output></div>
+    </section>
+    <section class="container prose"><div class="related-links"><a href="./calculator-tools.html">All calculators</a><a href="./age-calculator.html">Age calculator</a></div><p>Expressions are parsed locally; the calculator does not execute JavaScript. Factorials are limited to non-negative integers up to 170.</p></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>ToolCentral</strong><p class="footer-note">Free, useful browser tools for everyday tasks.</p><p class="footer-credit">Developed by <span>Kashan Ali</span></p></div><ul class="footer-links"><li><a href="./calculator-tools.html">Calculators</a></li><li><a href="./document-tools.html">Document tools</a></li><li><a href="./terms.html">Terms</a></li></ul></div></footer>
+  <script src="./assets/js/scientific-calculator.js" defer></script><script src="./assets/js/nav.js" defer></script>
+</body>
+</html>

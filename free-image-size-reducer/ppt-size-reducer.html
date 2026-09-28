@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PowerPoint Size Reducer: Compress PPT Images | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description" content="Reduce embedded JPEG and PNG image sizes inside a PowerPoint PPTX presentation in your browser.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/ppt-size-reducer.html"><meta name="theme-color" content="#09090c"><link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website"><meta property="og:title" content="PowerPoint Size Reducer — ToolCentral"><meta property="og:description" content="Reduce PPTX presentation size by resizing embedded JPEG and PNG images on your device."><meta property="og:url" content="https://www.freeimagesizereducer.com/ppt-size-reducer.html"><meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PowerPoint Size Reducer — ToolCentral">
+  <meta name="twitter:description" content="Resize and recompress embedded JPEG and PNG images in PPTX files in your browser.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"PowerPoint Size Reducer","url":"https://www.freeimagesizereducer.com/ppt-size-reducer.html","description":"Resize and recompress eligible JPEG and PNG images embedded in modern PPTX presentations in your browser. Other media is unchanged.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"browserRequirements":"Requires JavaScript"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-row"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v7M12 3l-3.2 3M12 3l3.2 3M12 21v-7M12 21l-3.2-3M12 21l3.2-3"/></svg></span>ToolCentral</a><button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul></div></header>
+  <main id="main">
+    <div class="page-header container"><h1>PowerPoint size reducer</h1><p class="lede">Optimize embedded JPEG and PNG images in a PowerPoint presentation, directly in your browser.</p></div>
+    <section class="container document-tool">
+      <h2>Choose a presentation</h2>
+      <div class="field"><label for="ppt-file">PowerPoint file (.pptx, up to 100 MB)</label><input id="ppt-file" type="file" accept=".pptx,application/vnd.openxmlformats-officedocument.presentationml.presentation"><p class="file-selection" id="ppt-file-selection" aria-live="polite">No presentation selected.</p><p class="field-help">Legacy .ppt files are not supported.</p></div>
+      <div class="field"><label for="ppt-max-dimension">Maximum embedded image dimension: <output id="ppt-max-value">1920</output> px</label><input id="ppt-max-dimension" type="range" min="800" max="3840" step="160" value="1920"></div>
+      <div class="field"><label for="ppt-quality">JPEG image quality: <output id="ppt-quality-value">78</output>%</label><input id="ppt-quality" type="range" min="45" max="95" step="5" value="78"></div>
+      <button class="btn btn-primary" id="reduce-ppt" type="button">Reduce PPTX size</button>
+      <p class="document-status" id="ppt-status" role="status" aria-live="polite"></p>
+      <div class="document-warning"><strong>What changes:</strong> Embedded JPEGs are resized and recompressed; PNGs may be resized and are retained only when the result is smaller. Other media and slide content are unchanged. Check the reduced presentation in PowerPoint before sharing.</div>
+    </section>
+    <section class="container prose"><div class="related-links"><a href="./document-tools.html">All document tools</a><a href="./pdf-splitter.html">PDF splitter</a><a href="./word-to-pdf.html">Word to PDF</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>ToolCentral</strong><p class="footer-note">Free, useful browser tools for everyday tasks.</p><p class="footer-credit">Developed by <span>Kashan Ali</span></p></div><ul class="footer-links"><li><a href="./document-tools.html">Document tools</a></li><li><a href="./password-generator.html">Password generator</a></li><li><a href="./terms.html">Terms</a></li></ul></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha384-+mbV2IY1Zk/X1p/nWllGySJSUN8uMs+gUAN10Or95UBH0fpj6GfKgPmgC5EXieXG" crossorigin="anonymous" defer></script>
+  <script src="./assets/js/ppt-size-reducer.js" defer></script><script src="./assets/js/nav.js" defer></script>
+</body>
+
+</html>

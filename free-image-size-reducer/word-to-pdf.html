@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word to PDF Converter: Create PDF Files | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description" content="Convert a DOCX Word document into a downloadable PDF in your browser. Files stay on your device.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/word-to-pdf.html"><meta name="theme-color" content="#09090c"><link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website"><meta property="og:title" content="Word to PDF Converter — ToolCentral"><meta property="og:description" content="Convert a DOCX document and download a PDF in your browser. Your Word file is processed on your device."><meta property="og:url" content="https://www.freeimagesizereducer.com/word-to-pdf.html"><meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Word to PDF Converter — ToolCentral">
+  <meta name="twitter:description" content="Convert a DOCX document and download a PDF in your browser. Your file stays on your device.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Word to PDF Converter","url":"https://www.freeimagesizereducer.com/word-to-pdf.html","description":"Convert common DOCX document content into a downloadable PDF in the browser. Advanced layout may not match the original.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"browserRequirements":"Requires JavaScript"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-row"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v7M12 3l-3.2 3M12 3l3.2 3M12 21v-7M12 21l-3.2-3M12 21l3.2-3"/></svg></span>ToolCentral</a><button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul></div></header>
+  <main id="main">
+    <div class="page-header container"><h1>Word to PDF</h1><p class="lede">Convert a Word document and download the PDF directly. Your files stay on your device.</p></div>
+    <section class="container document-tool">
+      <h2>Choose a Word document</h2>
+      <div class="field"><label for="word-file">Word document (.docx, up to 50 MB)</label><input id="word-file" type="file" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><p class="file-selection" id="word-file-selection" aria-live="polite">No Word document selected.</p></div>
+      <button class="btn btn-primary" id="preview-word" type="button">Create preview</button>
+      <button class="btn btn-secondary" id="download-word-pdf" type="button" disabled>Download PDF</button>
+      <p class="document-status" id="word-pdf-status" role="status" aria-live="polite"></p>
+      <div class="document-warning"><strong>Conversion limits:</strong> The preview supports common Word text, headings, lists, tables, and inline images. Advanced page layout, headers, footers, tracked changes, embedded objects, and some fonts may not match the original.</div>
+    </section>
+    <section class="container document-preview-wrap" id="word-preview-wrap" hidden>
+      <h2>Document preview</h2><article id="word-preview" class="document-preview"></article>
+    </section>
+    <section class="container prose document-related"><div class="related-links"><a href="./document-tools.html">All document tools</a><a href="./pdf-to-word.html">PDF to Word</a><a href="./pdf-splitter.html">PDF splitter</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>ToolCentral</strong><p class="footer-note">Free, useful browser tools for everyday tasks.</p><p class="footer-credit">Developed by <span>Kashan Ali</span></p></div><ul class="footer-links"><li><a href="./document-tools.html">Document tools</a></li><li><a href="./password-generator.html">Password generator</a></li><li><a href="./terms.html">Terms</a></li></ul></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.14.0/html2pdf.bundle.min.js" integrity="sha384-EaWTV/aVUkLz3tfwg3+5ycX7Q/d9ET9ruOKUgUuFIRUCfzHO1eo2J62a844iWPmY" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mammoth@1.9.1/mammoth.browser.min.js" integrity="sha384-Dmql2RDFhRnFI5K9k2OlF+n+0KL1nR4scY5Akjy8jw8GEbmChSzpsB6Q4Mv+xF0L" crossorigin="anonymous" defer></script>
+  <script src="./assets/js/word-to-pdf.js" defer></script><script src="./assets/js/nav.js" defer></script>
+</body>
+
+</html>

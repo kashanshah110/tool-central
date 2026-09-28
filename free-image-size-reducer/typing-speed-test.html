@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typing Speed Test: Measure WPM &amp; Accuracy | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description"
+    content="Practice typing with random passages and timed tests. See your words per minute, accuracy, and typing errors instantly. Free and private.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/typing-speed-test.html">
+  <meta name="theme-color" content="#09090c">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Typing Speed Test — Measure Your WPM and Accuracy">
+  <meta property="og:description" content="Take a 15, 30, 60, or 120-second typing test and see WPM, accuracy, and errors instantly.">
+  <meta property="og:url" content="https://www.freeimagesizereducer.com/typing-speed-test.html">
+  <meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Typing Speed Test — ToolCentral">
+  <meta name="twitter:description" content="Take a timed typing test and see your WPM, accuracy, and errors instantly.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Typing Speed Test",
+    "url": "https://www.freeimagesizereducer.com/typing-speed-test.html",
+    "description": "Practice typing with timed passages and see words per minute, accuracy, and errors. Runs in your browser.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "isAccessibleForFree": true,
+    "browserRequirements": "Requires JavaScript"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v7M12 3l-3.2 3M12 3l3.2 3M12 21v-7M12 21l-3.2-3M12 21l3.2-3" />
+          </svg></span>
+        ToolCentral
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header container">
+      <h1>Typing speed test</h1>
+      <p class="lede">Type the random passage before time runs out. Your speed, accuracy, and errors update as you type.</p>
+    </div>
+
+    <section class="container typing-test" aria-labelledby="test-heading">
+      <h2 id="test-heading">Ready to test your typing?</h2>
+      <div class="typing-controls">
+        <div class="field">
+          <label for="test-duration">Test duration</label>
+          <select id="test-duration">
+            <option value="15">15 seconds</option>
+            <option value="30">30 seconds</option>
+            <option value="60" selected>60 seconds</option>
+            <option value="120">120 seconds</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" id="start-test">Start test</button>
+        <p class="typing-timer" aria-live="off">Time left <strong id="time-left">60</strong>s</p>
+      </div>
+
+      <div class="typing-prompt" id="typing-prompt" aria-label="Text to type"></div>
+      <label class="visually-hidden" for="typing-input">Type the passage shown above</label>
+      <textarea id="typing-input" rows="4" placeholder="Choose a duration and start the test to begin typing."
+        autocomplete="off" autocapitalize="off" spellcheck="false" disabled></textarea>
+
+      <div class="typing-stats" aria-label="Live typing statistics">
+        <div class="typing-stat"><span>Speed</span><strong><span id="live-wpm">--</span><span id="live-wpm-unit" hidden> WPM</span></strong></div>
+        <div class="typing-stat"><span>Accuracy</span><strong><span id="live-accuracy">--</span><span id="live-accuracy-unit" hidden>%</span></strong></div>
+        <div class="typing-stat"><span>Errors</span><strong id="live-errors">0</strong></div>
+      </div>
+
+      <section class="typing-result" id="typing-result" aria-live="polite" hidden>
+        <h2>Test complete</h2>
+        <p class="typing-final-speed"><strong id="final-wpm">--</strong><span id="final-wpm-unit" hidden> WPM</span></p>
+        <p><strong id="final-accuracy">--</strong><span id="final-accuracy-unit" hidden>%</span> accuracy · <strong id="final-errors">0</strong> errors</p>
+        <p><strong id="final-correct">0</strong> correct characters</p>
+        <p id="no-typing-message" role="status" hidden>No typing detected. Try again.</p>
+      </section>
+      <p class="field-help">WPM is calculated from correctly typed characters (5 characters count as one word). Text and
+        results stay in your browser and are not saved.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ToolCentral</strong>
+        <p class="footer-note">Free, useful browser tools, including typing practice and image compression.</p>
+        <p class="footer-credit">Developed by <span>Kashan Ali</span></p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="./typing-speed-test.html">Typing test</a></li>
+        <li><a href="./qr-code-generator.html">QR generator</a></li>
+        <li><a href="./unit-converter.html">Unit converter</a></li>
+        <li><a href="./password-generator.html">Password generator</a></li>
+        <li><a href="./document-tools.html">Document tools</a></li>
+        <li><a href="./terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./assets/js/typing-speed-test.js" defer></script>
+  <script src="./assets/js/nav.js" defer></script>
+</body>
+
+</html>

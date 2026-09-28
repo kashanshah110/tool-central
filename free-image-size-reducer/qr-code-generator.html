@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Code Generator: Create &amp; Download QR Codes | ToolCentral</title>
+  <meta name="author" content="Kashan Ali">
+  <meta name="description"
+    content="Create custom QR codes for links, text, Wi-Fi, contacts, email, calls, and SMS. Choose colors and size, then download PNG or SVG.">
+  <link rel="canonical" href="https://www.freeimagesizereducer.com/qr-code-generator.html">
+  <meta name="theme-color" content="#09090c">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QR Code Generator — Create and Download Custom QR Codes">
+  <meta property="og:description" content="Make a QR code for links, Wi-Fi, contacts, and more. Download PNG or SVG.">
+  <meta property="og:url" content="https://www.freeimagesizereducer.com/qr-code-generator.html">
+  <meta property="og:site_name" content="ToolCentral">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="QR Code Generator — ToolCentral">
+  <meta name="twitter:description" content="Create QR codes for text, links, Wi-Fi, contact cards, email, calls, and SMS. Download PNG or SVG.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "QR Code Generator",
+    "url": "https://www.freeimagesizereducer.com/qr-code-generator.html",
+    "description": "Create and download QR codes for text, URLs, Wi-Fi, contact cards, email, phone calls, and SMS in your browser.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "isAccessibleForFree": true,
+    "browserRequirements": "Requires JavaScript"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v7M12 3l-3.2 3M12 3l3.2 3M12 21v-7M12 21l-3.2-3M12 21l3.2-3" />
+          </svg></span>
+        ToolCentral
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+  <li><a href="./index.html">Image compressor</a></li>
+  <li><a href="./typing-speed-test.html">Typing test</a></li>
+  <li><a href="./qr-code-generator.html">QR generator</a></li>
+  <li><a href="./unit-converter.html">Unit converter</a></li>
+  <li><a href="./password-generator.html">Password generator</a></li>
+  <li class="nav-dropdown"><a href="./document-tools.html">Document tools</a>
+    <ul class="nav-submenu" aria-label="Document tools">
+      <li><a href="./pdf-splitter.html">PDF splitter</a></li>
+      <li><a href="./pdf-to-word.html">PDF to Word</a></li>
+      <li><a href="./word-to-pdf.html">Word to PDF</a></li>
+      <li><a href="./ppt-size-reducer.html">PowerPoint size reducer</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown"><a href="./calculator-tools.html">Calculators</a>
+    <ul class="nav-submenu" aria-label="Calculators">
+      <li><a href="./age-calculator.html">Age calculator</a></li>
+      <li><a href="./scientific-calculator.html">Scientific calculator</a></li>
+      <li><a href="./bmi-calculator.html">BMI calculator</a></li>
+      <li><a href="./percentage-calculator.html">Percentage calculator</a></li>
+    </ul>
+  </li>
+</ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header container">
+      <h1>QR code generator</h1>
+      <p class="lede">Make a scannable code for a link, Wi-Fi network, contact, email, phone number, or message. Customize
+        it and download it as PNG or SVG.</p>
+    </div>
+
+    <section class="container qr-tool" aria-labelledby="qr-tool-heading">
+      <div class="qr-form-column">
+        <h2 id="qr-tool-heading">What should your QR code contain?</h2>
+        <form id="qr-form" novalidate>
+          <div class="field">
+            <label for="qr-type">Content type</label>
+            <select id="qr-type">
+              <option value="text">Text or URL</option>
+              <option value="wifi">Wi-Fi network</option>
+              <option value="contact">Contact card</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone number</option>
+              <option value="sms">Text message (SMS)</option>
+            </select>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="text">
+            <div class="field">
+              <label for="qr-text">Text or web address</label>
+              <textarea id="qr-text" rows="4" maxlength="2500" aria-describedby="qr-text-error"
+                placeholder="Enter text or a URL, such as https://example.com"></textarea>
+              <p class="field-error" id="qr-text-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="wifi" hidden>
+            <div class="field">
+              <label for="wifi-name">Network name (SSID)</label>
+              <input id="wifi-name" type="text" maxlength="128" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="wifi-security">Security</label>
+              <select id="wifi-security">
+                <option value="WPA">WPA / WPA2 / WPA3</option>
+                <option value="WEP">WEP</option>
+                <option value="nopass">No password</option>
+              </select>
+            </div>
+            <div class="field" id="wifi-password-field">
+              <label for="wifi-password">Network password</label>
+              <input id="wifi-password" type="password" maxlength="128" autocomplete="new-password">
+            </div>
+            <label class="qr-checkbox"><input id="wifi-hidden" type="checkbox"> Hidden network</label>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="contact" hidden>
+            <div class="field">
+              <label for="contact-name">Full name</label>
+              <input id="contact-name" type="text" maxlength="100" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="contact-organization">Organization <span class="optional">(optional)</span></label>
+              <input id="contact-organization" type="text" maxlength="100" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="contact-phone">Phone <span class="optional">(optional)</span></label>
+              <input id="contact-phone" type="tel" maxlength="40" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="contact-email">Email <span class="optional">(optional)</span></label>
+              <input id="contact-email" type="email" maxlength="254" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="contact-url">Website <span class="optional">(optional)</span></label>
+              <input id="contact-url" type="url" maxlength="500" placeholder="https://example.com">
+            </div>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="email" hidden>
+            <div class="field">
+              <label for="email-to">Email address</label>
+              <input id="email-to" type="email" maxlength="254" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="email-subject">Subject <span class="optional">(optional)</span></label>
+              <input id="email-subject" type="text" maxlength="200">
+            </div>
+            <div class="field">
+              <label for="email-body">Message <span class="optional">(optional)</span></label>
+              <textarea id="email-body" rows="3" maxlength="1000"></textarea>
+            </div>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="phone" hidden>
+            <div class="field">
+              <label for="phone-number">Phone number</label>
+              <input id="phone-number" type="tel" maxlength="40" autocomplete="tel"
+                placeholder="+1 555 123 4567">
+            </div>
+          </div>
+
+          <div class="qr-fields" data-qr-fields="sms" hidden>
+            <div class="field">
+              <label for="sms-number">Phone number</label>
+              <input id="sms-number" type="tel" maxlength="40" autocomplete="tel"
+                placeholder="+1 555 123 4567">
+            </div>
+            <div class="field">
+              <label for="sms-message">Text message</label>
+              <textarea id="sms-message" rows="3" maxlength="500"></textarea>
+            </div>
+          </div>
+
+          <fieldset class="qr-options">
+            <legend>Appearance and quality</legend>
+            <div class="qr-option-grid">
+              <div class="field">
+                <label for="qr-size">Image size</label>
+                <select id="qr-size">
+                  <option value="128">128 px</option>
+                  <option value="256" selected>256 px</option>
+                  <option value="384">384 px</option>
+                  <option value="512">512 px</option>
+                  <option value="768">768 px</option>
+                  <option value="1024">1024 px</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qr-error-correction">Error correction</label>
+                <select id="qr-error-correction">
+                  <option value="L">Low (smallest code)</option>
+                  <option value="M" selected>Medium (recommended)</option>
+                  <option value="Q">Quartile</option>
+                  <option value="H">High (most resilient)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qr-margin">Quiet-zone margin <span id="qr-margin-value">4 modules</span></label>
+                <input id="qr-margin" type="range" min="0" max="16" value="4">
+              </div>
+              <div class="field qr-colors">
+                <label for="qr-foreground">Code color</label>
+                <input id="qr-foreground" type="color" value="#16211d">
+              </div>
+              <div class="field qr-colors">
+                <label for="qr-background">Background color</label>
+                <input id="qr-background" type="color" value="#ffffff">
+              </div>
+            </div>
+            <p class="field-help">For reliable scanning, use a dark code on a light background and keep at least 4
+              modules of margin.</p>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary" id="generate-qr">Generate QR code</button>
+        </form>
+      </div>
+
+      <aside class="qr-preview-column" aria-label="QR code preview and downloads">
+        <h2>Your QR code</h2>
+        <div class="qr-preview" id="qr-preview">
+          <p class="qr-empty" id="qr-empty">Your QR code preview will appear here.</p>
+        </div>
+        <p class="qr-output-size" id="qr-output-size" hidden></p>
+        <div class="qr-downloads">
+          <button type="button" class="btn btn-secondary" id="download-png" disabled>Download PNG</button>
+          <button type="button" class="btn btn-secondary" id="download-svg" disabled>Download SVG</button>
+          <button type="button" class="btn btn-ghost" id="copy-png" disabled>Copy image</button>
+          <button type="button" class="btn btn-ghost" id="copy-data" disabled>Copy content</button>
+        </div>
+        <button type="button" class="btn btn-ghost qr-reset" id="reset-qr">Clear</button>
+        <p class="qr-status" id="qr-status" role="status" aria-live="polite"></p>
+      </aside>
+    </section>
+
+    <section class="container prose">
+      <div class="callout">
+        <h2>Keep your QR code scannable</h2>
+        <p>Test the downloaded code with a phone camera before printing or sharing it. Use a clear contrast between
+          foreground and background, leave the quiet-zone margin intact, and avoid putting private information in a
+          code you plan to share publicly.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ToolCentral</strong>
+        <p class="footer-note">Free, useful browser tools, including QR codes and image compression.</p>
+        <p class="footer-credit">Developed by <span>Kashan Ali</span></p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="./typing-speed-test.html">Typing test</a></li>
+        <li><a href="./qr-code-generator.html">QR generator</a></li>
+        <li><a href="./unit-converter.html">Unit converter</a></li>
+        <li><a href="./password-generator.html">Password generator</a></li>
+        <li><a href="./document-tools.html">Document tools</a></li>
+        <li><a href="./terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@2.0.4/dist/qrcode.js"
+    integrity="sha384-e9EFD6BGC90bkW9aDV5xbbBfzwN7G8YImHao2lfLVKV/hPB0E0go+H3I64h7oHtA"
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="./assets/js/qr-code-generator.js" defer></script>
+  <script src="./assets/js/nav.js" defer></script>
+</body>
+
+</html>

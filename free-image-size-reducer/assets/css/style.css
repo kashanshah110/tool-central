@@ -162,6 +162,8 @@ code, kbd { font-family: var(--font-mono); background: var(--primary-tint); padd
 
 .nav-links {
   display: flex;
+  flex-shrink: 0;
+  min-width: fit-content;
   align-items: center;
   gap: 1.6rem;
   list-style: none;
@@ -1240,12 +1242,15 @@ input[type="range"] {
   .btn-primary:hover:not(:disabled), .document-tool-card:hover { transform: none; }
 }
 
+@media (max-width: 680px) {
+  .unit-conversion-grid { grid-template-columns: 1fr; }
+  .unit-swap { justify-self: center; transform: rotate(90deg); }
+}
+
 @media (max-width: 520px) {
   .typing-timer { margin-left: 0; }
   .typing-stats { grid-template-columns: 1fr; }
   .qr-option-grid { grid-template-columns: 1fr; }
-  .unit-conversion-grid { grid-template-columns: 1fr; }
-  .unit-swap { justify-self: center; transform: rotate(90deg); }
   .unit-result { grid-template-columns: 1fr; }
   .unit-result-label { grid-column: 1; }
   .unit-result .btn { grid-column: 1; grid-row: auto; justify-self: start; }

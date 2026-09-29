@@ -226,8 +226,5 @@
     input.addEventListener("input", () => updateToggleState(input, button));
   });
 
-  document.getElementById("check-password").addEventListener("click", () => {
-    updateStrength(checkedInput.value, "checked");
-  });
   checkedInput.addEventListener("input", () => updateStrength(checkedInput.value, "checked"));
 })();

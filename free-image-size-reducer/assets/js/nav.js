@@ -64,8 +64,7 @@
     nextDocument.head.querySelectorAll('script[type="application/ld+json"]').forEach((script) => {
       document.head.appendChild(script.cloneNode(true));
     });
-    document.title = "JK Tools";
-    document.title = "JK Tools";
+    document.title = nextDocument.title;
   }
 
   function runScript(source, pageUrl) {

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JK Tools — midnight red design system
+   Toolshub — midnight red design system
    ========================================================================== */
 
 :root {
@@ -158,8 +158,11 @@ code, kbd { font-family: var(--font-mono); background: var(--primary-tint); padd
   box-shadow: 0 0 18px rgba(255, 41, 79, 0.3), inset 0 1px rgba(255, 255, 255, 0.18);
   display: grid;
   place-items: center;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
 }
-.brand-mark svg { width: 21px; height: 21px; }
 
 .nav-links {
   display: flex;

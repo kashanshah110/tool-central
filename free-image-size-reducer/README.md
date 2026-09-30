@@ -1,8 +1,8 @@
-# JK Tools
+# Toolshub
 
-The interface uses a high-contrast black-and-red gradient theme. Shared
-colors, focus states, and responsive components are maintained in
-`assets/css/style.css`.
+The interface uses a high-contrast black-and-red gradient theme, with a JK
+monogram across the header and favicon. Shared colors, focus states, and
+responsive components are maintained in `assets/css/style.css`.
 
 A free collection of static browser tools built with HTML, CSS, and
 JavaScript — no build step, backend, or framework. Image compression,
@@ -95,7 +95,7 @@ page and the compressor on the final URL.
 Before launch:
 
 1. **SEO and answer-engine discovery** — update the canonical/Open Graph metadata in each HTML
-   page, `robots.txt`, and `sitemap.xml` if JK Tools moves to a
+   page, `robots.txt`, and `sitemap.xml` if Toolshub moves to a
    different production domain. Canonical URLs currently use the site's
    existing configured domain. For a project subpath, include that
    subpath in canonical URLs and sitemap entries. Do not add location
@@ -170,7 +170,7 @@ Before launch:
    upload/preview/download area. Fill it with your ad network's code if
    you choose to monetize this way; nothing here claims ad-network
    approval or guaranteed earnings.
-3. **Brand and social image** — the site uses the JK Tools monogram in
+3. **Brand and social image** — the site uses the JK monogram in
    `assets/img/favicon.svg` and the shared page header. Add a correctly
    sized social preview image and matching `og:image` metadata if one is
    created for production.

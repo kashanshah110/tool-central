@@ -6,6 +6,6 @@
     </linearGradient>
   </defs>
   <rect width="32" height="32" rx="8" fill="url(#brand)"/>
-  <path d="M5 12h22a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2ZM10 12V8.5A1.5 1.5 0 0 1 11.5 7h9A1.5 1.5 0 0 1 22 8.5V12M3 17h26M13 17v3h6v-3"
-        fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="16" y="21.5" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700"
+        letter-spacing="-1.2" text-anchor="middle">JK</text>
 </svg>

@@ -1,5 +1,5 @@
 /*!
- * compressor.js — ToolCentral
+ * compressor.js — JK Tools
  * Browser-only image compression engine. No network calls, no uploads.
  * Exposes `window.ImageCompressor` with a small, dependency-free API built
  * on the Canvas 2D API. All work happens on the visitor's device.

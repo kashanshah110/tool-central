@@ -5,7 +5,7 @@
       <stop offset="1" stop-color="#b90831"/>
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="7" fill="url(#brand)"/>
-  <path d="M16 6 L16 14 M16 6 L12 10 M16 6 L20 10" stroke="#fff5f6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M16 26 L16 18 M16 26 L12 22 M16 26 L20 22" stroke="#fff5f6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect width="32" height="32" rx="8" fill="url(#brand)"/>
+  <path d="M5 12h22a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2ZM10 12V8.5A1.5 1.5 0 0 1 11.5 7h9A1.5 1.5 0 0 1 22 8.5V12M3 17h26M13 17v3h6v-3"
+        fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

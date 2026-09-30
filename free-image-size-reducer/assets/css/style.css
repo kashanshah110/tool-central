@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ToolCentral — midnight red design system
+   JK Tools — midnight red design system
    ========================================================================== */
 
 :root {
@@ -152,13 +152,14 @@ code, kbd { font-family: var(--font-mono); background: var(--primary-tint); padd
 .brand:hover { color: var(--ink); }
 .brand-mark {
   width: 30px; height: 30px; flex: none;
-  border-radius: 7px;
-  background: linear-gradient(145deg, #ff536f, #c90832);
-  box-shadow: 0 0 20px rgba(255, 41, 79, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 8px;
+  background: linear-gradient(145deg, #ff607b, #b90831);
+  box-shadow: 0 0 18px rgba(255, 41, 79, 0.3), inset 0 1px rgba(255, 255, 255, 0.18);
   display: grid;
   place-items: center;
 }
-.brand-mark svg { width: 18px; height: 18px; }
+.brand-mark svg { width: 21px; height: 21px; }
 
 .nav-links {
   display: flex;

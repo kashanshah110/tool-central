@@ -1,4 +1,4 @@
-# ToolCentral
+# JK Tools
 
 The interface uses a high-contrast black-and-red gradient theme. Shared
 colors, focus states, and responsive components are maintained in
@@ -94,12 +94,13 @@ page and the compressor on the final URL.
 
 Before launch:
 
-1. **SEO URLs** — update the canonical/Open Graph metadata in each HTML
-   page, `robots.txt`, and `sitemap.xml` if ToolCentral moves to a
+1. **SEO and answer-engine discovery** — update the canonical/Open Graph metadata in each HTML
+   page, `robots.txt`, and `sitemap.xml` if JK Tools moves to a
    different production domain. Canonical URLs currently use the site's
    existing configured domain. For a project subpath, include that
-   subpath in canonical URLs and sitemap entries.
-   Page titles, descriptions, structured application data, descriptive
+   subpath in canonical URLs and sitemap entries. Do not add location
+   targeting unless the service has a real, relevant service area.
+   Page titles, descriptions, structured application/site identity, descriptive
    headings, and direct tool explanations are included to help search
    engines and answer engines identify each tool accurately. These
    signals do not guarantee rankings or AI-generated citations.
@@ -169,9 +170,10 @@ Before launch:
    upload/preview/download area. Fill it with your ad network's code if
    you choose to monetize this way; nothing here claims ad-network
    approval or guaranteed earnings.
-3. **Favicon / social image** — `assets/img/favicon.svg` is a simple
-   placeholder mark; swap it for real branding if you have one, and
-   consider adding an `og:image` for richer social previews.
+3. **Brand and social image** — the site uses the JK Tools monogram in
+   `assets/img/favicon.svg` and the shared page header. Add a correctly
+   sized social preview image and matching `og:image` metadata if one is
+   created for production.
 
 ## Known limitations (documented, not hidden)
 
